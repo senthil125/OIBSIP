@@ -65,11 +65,6 @@ print("\n There is no duplicate values in the dataset")
 #standardization: Consistent formatting and units across the dataset for accurate analysis.
 print(" Overview of dataset",ds.info())#overview of dataset
 
-#price column is without unit ,add unit to price column
-ds['price'] = "$"+ds['price'].astype(str)
-#after added unit display the price columns
-print(ds['price'].head())
-
 #To inspect unique values and  identify inconsistencies or unexpected values.
 print("\nUnqiue values of each columns\n",ds.apply(lambda x: x.unique()))
 
@@ -78,6 +73,11 @@ print("\nDescription of dataset\n",ds.describe())
 
 #manually check sample of rows to identitfy any irregularties
 print("\nDataset \n",ds.head(10))
+
+#price column is without unit ,add unit to price column
+ds['price'] = "$"+ds['price'].astype(str)
+#after added unit display the price columns
+print("\n price column after unit adding\n", ds['price'].head())
 
 print("Dataset is  consistent format and units across the dataset for accurate analysis")
 
