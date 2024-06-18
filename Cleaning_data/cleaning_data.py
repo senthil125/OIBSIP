@@ -99,7 +99,7 @@ IQR = Q3 - Q1
 outliers = ((ds[n] < (Q1 - 1.5 * IQR)) | (ds[n] > (Q3 + 1.5 * IQR))).any(axis=1)
 
 # Print the rows with outliers
-print("\nRows with outliers and its count:")
+print("\nColumns with outliers and its count:")
 print(ds[n][outliers].count())
 
 print("\nFinal Data Info:")
