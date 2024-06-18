@@ -39,7 +39,6 @@ print("\nbefore dropping no of rows in host_name:",ds['host_name'].shape)
 ds.dropna(subset=['host_name'], inplace=True)
 print("\nafter dropping no of rows in host_name:",ds['host_name'].shape)
 
-#Missing data handling:
 #Handling last_review and reviews_per_month
 print("\n Handling missing values of last_review and reviews_per_month")
 
