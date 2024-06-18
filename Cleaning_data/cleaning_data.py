@@ -79,7 +79,7 @@ print("\nDataset manual checking \n",ds.head(10))
 #price column is without unit ,add unit to price column
 ds['price'] = "$"+ds['price'].astype(str)
 #after added unit display the price columns
-print("\n price column after unit adding\n", ds['price'].head())
+print("\n price column after unit added\n", ds['price'].head())
 
 print("Dataset has been standardized: formats and units are now consistent across all entries.")
 
