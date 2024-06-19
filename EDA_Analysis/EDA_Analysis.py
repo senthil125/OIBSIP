@@ -125,3 +125,7 @@ plt.ylabel('Date')
 plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
+
+#***NOTE***
+#I Provided actionable reccomendations based on this EDA in a document which was uploaded in my GitHub respository.
+print("\nI Provided actionable reccomendations based on this EDA in a document which was uploaded in my GitHub respository")
